@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <html>
+        <head>
+            <meta charset="Utf-8" />
+            <meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1" />
+            <meta viewport content="width=device-width, initial-scale=1.0" />
+            <title>Duckencrypt</title>
+            <link rel="stylesheet" href="/css/style.css">
+            <link rel="stylesheet" href="/css/reset.css">
+            <link rel="shortcut icon" href="/assets/icons/imgA.jpg" type="image/x-icon">
+            <script src="/js/java.js"></script>
+        </head>
+        <body>
+            <header>
+                <h1 class="title">Duckencrypt</h1>
+            </header>
+
+            <div class="contenedor"></div>
+            <main class="principal">
+                <form action="">
+                    <div class="contenedor">
+                        <div class="encriptar">
+                            <textarea name="textarea" rows="25" cols="50" id="textoEncriptar" class="textarea-palabras"placeholder="Ingrese texto" autofocus></textarea>
+                        </div>
+                        <div class="especificaciones">
+                            <p id="Requerimiento">Solo letras minúsculas y sin acentos</p>
+                        </div>
+
+                        <div class="botones">
+                            <button type="button" class="Button" id="BtnEncriptar" onclick="encriptar()">Encriptar</button>
+
+                            <button type="button" class="Button" id="BtnDesencriptar" onclick="desencriptar()">Desencriptar</button>                           
+                        </div>
+                        
+                        <div class="imagen">
+                        <img src="/assets/img/imga.png" alt="Imagen de un pato" class="img" id="image">
+                        </div>
+
+                        <div class="terminos">
+                            <h2 id="titulo-mensaje">¡Eres bienvenido!</h2>
+                            <p id="parrafo">¡Por favor! Ingrese el texto</p>
+                    
+                        </div>
+                        <div>
+                            <textarea name="textarea" rows="10" cols="30" id="textoDesencriptado" class="textarea-respuesta" placeholder="" maxlength="0" autofocus></textarea></textarea>
+                        </div>
+                        <div class="btncopia">
+                        <button type="button" class="Button" id="BtnCopiar" onclick="copiar()">Copiar</button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+        </body>
+    </html>
