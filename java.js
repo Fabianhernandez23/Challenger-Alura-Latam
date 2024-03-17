@@ -15,9 +15,9 @@ if (texto.length != 0) {
     document.getElementById("textoEncriptar").value = textoCifrado;
     tituloMensaje.textContent = "Texto encriptado con exito";
     parrafo.textContent = ":)";
-    imagen.src = "/assets/img/imgd.jpg";
+    imagen.src = "img/imgd.jpg";
 }else {
-    imagen.src = "/assets/img/imga.png";
+    imagen.src = "img/imga.png";
     tituloMensaje.textContent = "Ningún mensaje fue encontrado";
     parrafo.textContent = "¡Por favor! Ingrese el texto a encriptar";
     alert("¡Debes ingresar un texto!");
@@ -42,9 +42,9 @@ function desencriptar() {
         document.getElementById("textoDesencriptado").value = textoCifrado;
         tituloMensaje.textContent = "Texto desencriptado con exito";
         parrafo.textContent = ":)";
-        imagen.src = "/assets/img/imgc.jpg";
+        imagen.src = "img/imgc.jpg";
     } else {
-        imagen.src = "/assets/img/imga.png";
+        imagen.src = "img/imga.png";
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "¡Por favor! Ingrese el texto a desencriptar";
         alert("¡Debes ingresar un texto!");
@@ -66,7 +66,7 @@ function copiar() {
             localStorage.setItem("textoCopiado", respuesta);
             tituloMensaje.textContent = "Texto copiado en portapeleras";
             parrafo.textContent = "¡Listo!";
-            imagen.src = "/assets/img/imgb.jpg";
+            imagen.src = "img/imgb.jpg";
         })
         .catch(error => {
             console.error('Error al copiar al portapapeles:', error);
